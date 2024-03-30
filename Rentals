@@ -1,0 +1,38 @@
+-- Inserting into leased_vehicles table
+INSERT INTO leased_vehicles (rental_id, customer_id, vehicle_id)
+VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5);
+-- Inserting into leased_vehicles table
+INSERT INTO leased_vehicles (rental_id, customer_id, vehicle_id)
+VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5);-- Inserting into customers table
+INSERT INTO customers (name, surname, id_number, dob, address, telephone, mobile_phone, profession, driving_license_class, marital_status, education_status) VALUES
+('John', 'Doe', '1234567890', '1990-05-15', '123 Main St', '1234567890', '0987654321', 'Engineer', 'Class A', 'Single', 'Graduate'),
+('Jane', 'Smith', '0987654321', '1985-08-20', '456 Elm St', '9876543210', '0123456789', 'Doctor', 'Class B', 'Married', 'Postgraduate'),
+('David', 'Johnson', '5678901234', '1978-03-10', '789 Oak St', '4567890123', '9876543210', 'Teacher', 'Class C', 'Divorced', 'Undergraduate'),
+('Sarah', 'Williams', '3456789012', '1995-12-25', '321 Pine St', '7890123456', '3456789012', 'Nurse', 'Class D', 'Single', 'Graduate'),
+('Michael', 'Brown', '9012345678', '1980-10-08', '654 Cedar St', '2345678901', '6789012345', 'Lawyer', 'Class A', 'Married', 'Postgraduate');
+
+-- Inserting into vehicles table
+INSERT INTO vehicles (vehicle_type, make, model, year_of_production, fuel_type, gear, engine_power, chassis_type, engine_volume, traction, door, colour, engine_no, chassis_no, daily_rental_price, rent, out_of_use) VALUES
+('Automobile', 'Toyota', 'Camry', '2022', 'Gasoline', 'Automatic', '200 hp', 'Sedan', '2.5L', 'Front-wheel drive', 4, 'Black', '123456', 'ABC123', 50.00, 0.00, 0),
+('SUV', 'Honda', 'CR-V', '2021', 'Gasoline', 'Automatic', '180 hp', 'SUV', '2.4L', 'All-wheel drive', 4, 'Silver', '234567', 'DEF456', 60.00, 0.00, 0),
+('Truck', 'Ford', 'F-150', '2020', 'Diesel', 'Automatic', '250 hp', 'Pickup', '3.0L', 'Rear-wheel drive', 4, 'White', '345678', 'GHI789', 70.00, 0.00, 0),
+('Sedan', 'Chevrolet', 'Malibu', '2023', 'Gasoline', 'Automatic', '190 hp', 'Sedan', '2.0L', 'Front-wheel drive', 4, 'Blue', '456789', 'JKL012', 55.00, 0.00, 0),
+('Van', 'Mercedes-Benz', 'Sprinter', '2022', 'Diesel', 'Automatic', '190 hp', 'Van', '2.2L', 'Rear-wheel drive', 5, 'Grey', '567890', 'MNO123', 80.00, 0.00, 0);
+
+-- Inserting into rentals table
+INSERT INTO rentals (customer_id, vehicle_id, days, destination) VALUES
+(1, 1, 7, 'Beach trip'),
+(2, 2, 5, 'Mountain retreat'),
+(3, 3, 3, 'City tour'),
+(4, 4, 2, 'Family vacation'),
+(5, 5, 4, 'Road trip');
